@@ -1,0 +1,235 @@
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+h2,h3{
+    margin: 20px 0;    
+}
+p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Utilities */
+.btn-black{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+.btn-brown{
+    background-color: #7a3618;
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-light{
+    font-weight:lighter;
+}
+.text-center{
+    text-align: center;
+}
+.text-red{
+    color: rgb(216, 0, 0);
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: 50px  auto;
+}
+/* header */
+.header-init{
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 300px;
+}
+.header-secundary{
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.menu a{
+    color: white;
+    margin-right: 30px;
+    line-height: 4;
+}
+.header-flex{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-text p{
+    line-height: 0;
+}
+/* Main */
+.blog-item{
+    border-bottom: 1px solid gray; 
+    margin-bottom: 20px;
+}
+.content-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    margin: 0  auto;
+}
+.blog-container{
+    width: 65%;
+    margin: 10px 20px;
+}
+/* About us/Main */
+.container p{
+    margin: 10px 0;
+}
+/* Section */
+.course-item{
+    border-bottom: 1px solid gray; 
+    margin-bottom: 20px;
+}
+.courses-container{
+    width: 35%;
+    margin: 10px 20px;
+}
+/* Contact */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+}
+.form-container{
+    padding: 20px;
+    margin-top: -40px;
+    background-color: white;
+}
+.input-container{
+    margin-bottom: 10px;
+}
+.input-container input,
+.input-container textarea{
+    width: 70%;
+    padding: 3px;
+}
+.input-container label{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+/* Courses */
+.courses-grid{
+    margin: 50px 0;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.course{
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 10px;
+    width: 50%;
+}
+.course img{
+    border-radius: 3px;
+    width: 100%;
+}
+.image{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin-right: 20px;
+}
+.text{
+    width: 50%;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+
+}
+.course button{
+    border-radius: 4px;
+}
+.course h3{
+    color: #431907;
+}
+.price-container{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.price-container .btn-brown{
+    margin-left: 6px;
+}
+.price-container .text-bold{
+    font-size: 16px;
+    color: #5a240d;
+}
+/* Footer */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+footer a{
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 120px;
+}
+
+@media (max-width: 1200px) {
+    .course img{
+        border-radius: 3px;
+        width: 70%;
+    }  
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+    }
+    .image{
+        text-align: center;
+        margin-right: 20px;
+        width: 100%;
+    }
+}
